@@ -1,0 +1,202 @@
+/* WordCamp Certificate Generator – Frontend Form Styles */
+
+:root {
+  --wcc-blue:   #21759b;
+  --wcc-dark:   #0a2a40;
+  --wcc-gold:   #c9a84c;
+  --wcc-light:  #f0f7fb;
+  --wcc-border: #d4e8f3;
+  --wcc-error:  #dc2626;
+  --wcc-success:#16a34a;
+  --wcc-radius: 12px;
+}
+
+.wcc-form-wrap {
+  max-width: 540px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Card */
+.wcc-form-card {
+  background: #fff;
+  border-radius: var(--wcc-radius);
+  border: 1px solid var(--wcc-border);
+  box-shadow: 0 4px 24px rgba(33,117,155,.12);
+  overflow: hidden;
+}
+
+/* Header */
+.wcc-form-header {
+  text-align: center;
+  padding: 40px 40px 32px;
+  background: linear-gradient(135deg, var(--wcc-dark) 0%, var(--wcc-blue) 100%);
+  color: #fff;
+}
+.wcc-form-icon {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.wcc-form-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff !important;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.wcc-form-subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,.8);
+  line-height: 1.5;
+  margin: 0;
+}
+.wcc-form-subtitle strong { color: #fff; }
+
+/* Form body */
+.wcc-form {
+  padding: 32px 40px 40px;
+}
+.wcc-field {
+  margin-bottom: 20px;
+}
+.wcc-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--wcc-dark);
+  margin-bottom: 6px;
+  letter-spacing: .3px;
+}
+.wcc-required {
+  color: var(--wcc-error);
+  margin-left: 2px;
+}
+.wcc-input {
+  display: block;
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--wcc-border);
+  border-radius: 8px;
+  font-size: 15px;
+  color: #1f2937;
+  background: #fff;
+  transition: border-color .2s, box-shadow .2s;
+  outline: none;
+  box-sizing: border-box;
+}
+.wcc-input::placeholder { color: #9ca3af; }
+.wcc-input:focus {
+  border-color: var(--wcc-blue);
+  box-shadow: 0 0 0 3px rgba(33,117,155,.15);
+}
+.wcc-input.wcc-input-error {
+  border-color: var(--wcc-error);
+  box-shadow: 0 0 0 3px rgba(220,38,38,.1);
+}
+.wcc-field-error {
+  display: block;
+  font-size: 12px;
+  color: var(--wcc-error);
+  margin-top: 5px;
+  min-height: 18px;
+}
+.wcc-form-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--wcc-error);
+  margin-bottom: 16px;
+}
+
+/* Submit button */
+.wcc-submit {
+  width: 100%;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, var(--wcc-blue) 0%, var(--wcc-dark) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity .2s, transform .1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+.wcc-submit:hover { opacity: .92; transform: translateY(-1px); }
+.wcc-submit:active { transform: translateY(0); opacity: 1; }
+.wcc-submit:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+
+/* Spinner */
+.wcc-spinner {
+  display: inline-block;
+  width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: wcc-spin .6s linear infinite;
+}
+@keyframes wcc-spin { to { transform: rotate(360deg); } }
+
+/* Success state */
+.wcc-success {
+  padding: 40px;
+  text-align: center;
+}
+.wcc-success-icon { font-size: 56px; margin-bottom: 12px; }
+.wcc-success-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--wcc-dark);
+  margin-bottom: 10px;
+}
+.wcc-success-msg {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.wcc-cert-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, var(--wcc-blue) 0%, var(--wcc-dark) 100%);
+  color: #fff !important;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity .2s, transform .1s;
+  margin-bottom: 12px;
+}
+.wcc-cert-btn:hover { opacity: .9; transform: translateY(-1px); color: #fff !important; }
+.wcc-another-btn {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--wcc-blue);
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 8px;
+  width: 100%;
+}
+.wcc-another-btn:hover { color: var(--wcc-dark); }
+
+@media (max-width: 480px) {
+  .wcc-form-header { padding: 28px 24px 24px; }
+  .wcc-form { padding: 24px; }
+  .wcc-success { padding: 28px 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wcc-spinner { animation: none; }
+  .wcc-submit, .wcc-cert-btn { transition: none; }
+}

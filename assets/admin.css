@@ -1,0 +1,101 @@
+/* WordCamp Certificate Generator – Admin Styles */
+.wcc-admin-wrap { max-width: 900px; }
+.wcc-admin-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.wcc-admin-title .dashicons { color: #21759b; }
+.wcc-admin-desc { color: #6b7280; margin-bottom: 20px; }
+
+.wcc-table { border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+.wcc-table th { background: #0a2a40 !important; color: #fff !important; font-size: 12px; letter-spacing: .5px; text-transform: uppercase; }
+
+.wcc-empty-state {
+  background: #f0f7fb;
+  border: 2px dashed #d4e8f3;
+  border-radius: 12px;
+  padding: 48px 32px;
+  text-align: center;
+  color: #6b7280;
+}
+.wcc-empty-icon { font-size: 48px; color: #21759b; display: block; margin-bottom: 12px; }
+
+.wcc-settings-form .form-table th { width: 200px; }
+.wcc-shortcode-box {
+  background: #f0f7fb;
+  border-left: 4px solid #21759b;
+  border-radius: 0 8px 8px 0;
+  padding: 20px 24px;
+  margin: 24px 0;
+  max-width: 700px;
+}
+.wcc-shortcode-box h3 { margin-top: 0; margin-bottom: 8px; }
+.wcc-shortcode-code {
+  display: block;
+  background: #fff;
+  border: 1px solid #d4e8f3;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin: 6px 0 12px;
+  color: #0a2a40;
+  user-select: all;
+}
+
+.wcc-logo-uploader { display: flex; align-items: center; gap: 16px; }
+.wcc-logo-preview {
+  width: 80px; height: 80px;
+  border: 1px solid #d4e8f3;
+  border-radius: 8px;
+  background: #f0f7fb;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.wcc-logo-preview img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.wcc-logo-preview--empty { border-style: dashed; }
+.wcc-logo-placeholder .dashicons { font-size: 28px; width: 28px; height: 28px; color: #a8c6d8; }
+.wcc-logo-buttons { display: flex; flex-direction: column; gap: 6px; }
+
+.wcc-attendee-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 16px 0 24px;
+  max-width: 700px;
+}
+.wcc-attendee-status .dashicons { font-size: 24px; width: 24px; height: 24px; margin-top: 2px; }
+.wcc-attendee-status--ok { background: #edfaef; border: 1px solid #b7e4bd; }
+.wcc-attendee-status--ok .dashicons { color: #1a7f37; }
+.wcc-attendee-status--empty { background: #fef8ee; border: 1px solid #f0dcb0; }
+.wcc-attendee-status--empty .dashicons { color: #b5750c; }
+.wcc-attendee-status p.description { margin: 4px 0 0; }
+
+.wcc-attendee-import-form { max-width: 700px; background: #fff; border: 1px solid #d4e8f3; border-radius: 8px; padding: 20px 24px; }
+.wcc-attendee-import-form h3 { margin-top: 0; }
+.wcc-attendee-import-form input[type="file"] { margin-top: 8px; }
+
+.wcc-attendee-list-box { max-width: 900px; margin-top: 24px; }
+.wcc-attendee-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.wcc-attendee-list-header h3 { margin: 0; }
+.wcc-attendee-search-form { display: flex; gap: 8px; align-items: center; }
+.wcc-attendee-search-form input[type="search"] { min-width: 240px; }
+.wcc-attendee-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.wcc-attendee-pagination-links { display: flex; gap: 8px; }

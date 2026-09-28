@@ -1,0 +1,33 @@
+/* Editor-only styles for the "Certificate Design" block canvas. */
+.wcc-design-block-notice {
+  background: #f0f7fb;
+  color: #0a2a40;
+  border: 1px solid #d4e8f3;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+/* Give the certificate canvas a visible editing frame and let the block
+   toolbar / inserter breathe inside the narrow certificate proportions. */
+.wcc-cert-canvas {
+  border: 1px dashed #c9a84c;
+  border-radius: 8px;
+  padding: 12px;
+  background: #f0f7fb;
+}
+.wcc-cert-canvas .cert { min-height: 400px; }
+.wcc-cert-canvas .wcc-cert-body {
+  min-height: 60px;
+}
+
+/* Certificate Field token, editor-only affordance. */
+.wcc-cert-field {
+  border: 1px dashed var(--wc-blue, #21759b);
+  border-radius: 4px;
+  padding: 2px 8px;
+  background: rgba(33, 117, 155, 0.06);
+  cursor: default;
+}
